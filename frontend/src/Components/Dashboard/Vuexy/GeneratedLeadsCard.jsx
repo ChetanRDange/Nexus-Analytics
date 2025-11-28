@@ -44,7 +44,7 @@ const GeneratedLeadsCard = ({ data, total = 0, topCount = 0 }) => {
                             >
                                 {chartData.map((entry, index) => (
                                     <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                )}
+                                ))}
                             </Pie>
                         </PieChart>
                     </ResponsiveContainer>
