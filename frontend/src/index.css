@@ -1,0 +1,457 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar globally but keep scroll functionality */
+* {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Custom scrollbar styles for when needed */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(155, 155, 155, 0.3);
+  border-radius: 3px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(155, 155, 155, 0.5);
+}
+
+/* Theme transition for smooth switching */
+.theme-transition,
+.theme-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease !important;
+}
+
+:root,
+[theme="light"] {
+  --text-primary: #344054;
+  --text-light: #ffff;
+
+  --text-secondary: #667085;
+  --text-blue: #175cd3;
+  --text-dark: #101828;
+  --text-darkblue: #0856cd;
+  --text-placeholder: #667085;
+
+  --border-primary: #d0d5dd;
+  --border-secondary: #175cd3;
+  --border-fadedblue: #84caff;
+  --border-blue: #a4bcfd;
+  --border-fadered: #fda29b;
+
+  --bg-primary: #175cd3;
+  --bg-primary-dark: #0d47a1;
+  --bg-hover: #f3f4f6;
+  --bg-hover-text: #bfbfc4;
+  --bg-tooltip: #111827;
+
+  --bg-error: #fda29b;
+  --bg-darkblue: #175cd3;
+  --bg-lightblue: #095fe3;
+  --bg-danger: #f04438;
+  --bg-fadedblue: #eff8ff;
+  --bg-darkgray: #d0d5dd;
+  --bg-lightcyan: #e0eaff;
+  --bg-main: #ffffff;
+}
+
+[theme="dark"] {
+  --text-primary: #e4e7ec;
+  --text-light: #111827;
+  --text-secondary: #98a2b3;
+  --text-blue: #60a5fa;
+  --text-dark: #f9fafb;
+  --text-darkblue: #93c5fd;
+  --text-placeholder: #7b8794;
+
+  --border-primary: #3e4c59;
+  --border-secondary: #60a5fa;
+  --border-fadedblue: #3b82f6;
+  --border-blue: #60a5fa;
+  --border-fadered: #f87171;
+
+  --bg-primary: #1e3a8a;
+  --bg-tooltip: #eff8ff;
+  --bg-primary-dark: #1c2849;
+  --bg-hover: #1c2849;
+  --bg-error: #f87171;
+  --bg-darkblue: #1e40af;
+  --bg-lightblue: #2563eb;
+  --bg-danger: #dc2626;
+  --bg-fadedblue: #1e293b;
+  --bg-darkgray: #334155;
+  --bg-lightcyan: #1e40af;
+  --bg-main: #111827;
+}
+
+/* Base body styles */
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* Dark mode base text colors */
+.dark {
+  color: #e4e7ec;
+}
+
+.dark body {
+  background-color: #25293c;
+  color: #e4e7ec;
+}
+
+/* Ensure all text is visible in dark mode */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #ffffff;
+}
+
+.dark p,
+.dark span,
+.dark label {
+  color: #a3a4cc;
+}
+
+.dark a {
+  color: #7367f0;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  color: #ffffff;
+  background-color: #2f3349;
+  border-color: #3b3f5c;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #6b6d8c;
+}
+
+/* Light mode base text colors */
+.light body {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light h5,
+.light h6 {
+  color: #111827;
+}
+
+.light p,
+.light span,
+.light label {
+  color: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.lucide {
+  /* width: 24px;
+  height: 24px; */
+  color: var(--text-primary);
+}
+
+.brdr {
+  border: 1px solid red;
+}
+
+/* REACT QUILL STYLES */
+
+/* TOOLBAR STYLES */
+.ql-toolbar {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid var(--border-primary) !important;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ql-toolbar .ql-formats {
+  margin-right: 8px;
+}
+
+/* EDITOR STYLES */
+.ql-editor,
+.ql-blank {
+  background-color: inherit !important;
+  color: var(--text-dark) !important;
+  font-size: 16px;
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  height: fit-content !important;
+}
+
+/* CONTAINER STYLES */
+.ql-container.ql-snow {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  min-height: 160px !important;
+  border: 1px solid var(--border-primary) !important;
+}
+
+/* TOOLBAR BUTTON STYLES */
+
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button:focus,
+.ql-snow .ql-toolbar button:focus,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active,
+.ql-snow.ql-toolbar .ql-picker-label:hover,
+.ql-snow .ql-toolbar .ql-picker-label:hover,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active,
+.ql-snow.ql-toolbar .ql-picker-item:hover,
+.ql-snow .ql-toolbar .ql-picker-item:hover,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+  color: var(--bg-primary) !important;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-snow.ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+  stroke: var(--bg-primary) !important;
+}
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button:focus .ql-stroke,
+.ql-snow .ql-toolbar button:focus .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow .ql-toolbar button:focus .ql-stroke-miter,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+  stroke: var(--bg-primary) !important;
+}
+
+.ql-snow .ql-stroke {
+  fill: none;
+  stroke: var(--text-dark) !important;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+}
+.ql-snow .ql-stroke-miter {
+  fill: none;
+  stroke: var(--text-dark) !important;
+  stroke-miterlimit: 10;
+  stroke-width: 2;
+}
+.ql-snow .ql-fill,
+.ql-snow .ql-stroke.ql-fill {
+  fill: var(--text-dark) !important;
+}
+
+.ql-snow .ql-picker {
+  color: var(--text-dark) !important;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  height: 24px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.ql-snow .ql-picker-options {
+  background-color: var(--bg-main) !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--border-primary) !important;
+  margin-top: 5px !important;
+  display: none;
+  min-width: 100%;
+  padding: 4px 8px;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* Add margin to the right side of the word count display */
+.word-count {
+  margin-right: 10px; /* Margin to the right of the word count */
+}
+
+/* Remove italic style from the placeholder text */
+.ql-snow .ql-editor.ql-blank::before {
+  font-style: normal !important;
+  color: var(--text-placeholder) !important;
+  font-weight: 400 !important;
+
+  content: attr(data-placeholder);
+}
+
+.react-tel-input .form-control {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.01rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 48px;
+  margin-left: 0;
+  background: inherit !important;
+  border: 1px solid var(--border-primary) !important;
+  border-left: none !important;
+  border-radius: 5px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  line-height: 25px;
+  height: 35px;
+  width: 300px;
+  outline: none;
+  color: var(--text-dark) !important;
+}
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+  background-color: var(--bg-hover) !important;
+}
+
+.react-tel-input .country-list .country:hover {
+  background-color: var(--bg-hover) !important;
+}
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background-color: var(--bg-main) !important;
+  border-radius: 3px 0 0 0;
+}
+
+.react-tel-input .country-list .country.highlight {
+  background-color: var(--bg-primary-faded) !important;
+}
+
+.react-tel-input .country-list {
+  outline: none;
+  z-index: 1;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 10px 0 10px -1px;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.35);
+  background-color: var(--bg-main) !important;
+  color: var(--text-dark);
+  width: 300px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: 8px !important;
+  border-radius: 0 0 3px 3px;
+  /* Apply custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-primary) transparent;
+}
+
+.react-tel-input .country-list::-webkit-scrollbar {
+  width: 3px;
+  height: 40px;
+  border-radius: 10px !important;
+}
+
+.react-tel-input .country-list::-webkit-scrollbar-thumb {
+  background-color: var(--border-primary);
+  border-radius: 10px !important;
+}
+
+.react-tel-input .country-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.react-tel-input .flag-dropdown {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  background-color: inherit !important;
+  border: 1px solid var(--border-primary) !important;
+  border-radius: 3px 0 0 3px;
+}

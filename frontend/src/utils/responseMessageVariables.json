@@ -1,0 +1,229 @@
+{
+    "LDMG001": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      },
+      {
+        "key": "password",
+        "title": "Password"
+      }
+    ],
+    "LDMG0023": [
+      {
+        "key": "field",
+        "title": "Required Fields"
+      }
+    ],
+    "LDMG0024": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      }
+    ],
+    "LDMG0025": [
+      {
+        "key": "phone.number",
+        "title": "Phone Number"
+      }
+    ],
+    "LDMG0027": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      }
+    ],
+    "LDMG0030": [
+      {
+        "key": "field",
+        "title": "Field Name"
+      }
+    ],
+    "LDMG0032": [
+      {
+        "key": "email",
+        "title": "Email Id"
+      }
+    ],
+    "LDMG0035": [
+      {
+        "key": "Current password",
+        "title": "Current password"
+      }
+    ],
+    "LDMG0042": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      }
+    ],
+    "LDMG002": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      },
+      {
+        "key": "minutes",
+        "title": "Minutes"
+      },
+      {
+        "key": "seconds",
+        "title": "Seconds"
+      }
+    ],
+    "LDMG003": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      },
+      {
+        "key": "password",
+        "title": "Password"
+      }
+    ],
+    "LDMG004": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      },
+      {
+        "key": "password",
+        "title": "Password"
+      },
+      {
+        "key": "name",
+        "title": "Name"
+      }
+    ],
+    "LDMG006": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      },
+      {
+        "key": "name",
+        "title": "Admin Name"
+      },
+      {
+        "key": "minutes",
+        "title": "Minutes"
+      },
+      {
+        "key": "seconds",
+        "title": "Seconds"
+      }
+    ],
+    "LDMG007": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      },
+      {
+        "key": "name",
+        "title": "Admin Name"
+      }
+    ],
+    "LDMG008": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      },
+      {
+        "key": "name",
+        "title": "Admin Name"
+      },
+      {
+        "key": "tries",
+        "title": "Tries"
+      },
+      {
+        "key": "otp",
+        "title": "OTP"
+      }
+    ],
+    "LDMG009": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      },
+      {
+        "key": "name",
+        "title": "Admin Name"
+      }
+    ],
+    "LDMG010": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      },
+      {
+        "key": "name",
+        "title": "Admin Name"
+      }
+    ],
+    "LDMG011": [
+      {
+        "key": "email",
+        "title": "Email ID"
+      }
+    ],
+    "LDMG012": [
+      { "key": "min", "title": "Minimum Length" },
+      { "key": "max", "title": "Maximum Length" }
+    ],
+    "LDMG013": [
+      {
+        "key": "name",
+        "title": "Admin Name"
+      },
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      },
+      {
+        "key": "new_password",
+        "title": "Admin New Password"
+      }
+    ],
+    "LDMG014": [
+      {
+        "key": "adminId",
+        "title": "Admin ID"
+      }
+    ],
+    "LDMG015": [
+      {
+        "key": "name",
+        "title": "Admin Name"
+      },
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      }
+    ],
+    "LDMG016": [
+      {
+        "key": "name",
+        "title": "Admin Name"
+      }
+    ],
+    "LDMG017": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      }
+    ],
+    "LDMG018": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      }
+    ],
+    "LDMG019": [
+      {
+        "key": "email",
+        "title": "Admin Email ID"
+      }
+    ]
+  }
+  

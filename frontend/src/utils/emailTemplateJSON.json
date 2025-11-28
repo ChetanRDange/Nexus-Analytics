@@ -1,0 +1,673 @@
+{
+  "otpVerificationAdmin": [
+    {
+      "title": "Recipient Name",
+      "key": "name",
+      "model": "Admin",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "name": "otp"
+    }
+  ],
+  "passwordUpdatedAdmin": [
+    {
+      "title": "Recipient Name",
+      "key": "name",
+      "model": "Admin",
+      "name": "admin_name"
+    }
+  ],
+  "forgotPasswordOtpAdmin": [
+    {
+      "title": "Recipient Name",
+      "key": "name",
+      "model": "Admin",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "name": "otp"
+    }
+  ],
+  "adminOnboardedAdmin": [
+    {
+      "title": "Recipient Name",
+      "key": "name",
+      "model": "Admin",
+      "name": "name"
+    },
+    {
+      "title": "Temporary Password",
+      "key": "password",
+      "name": "password"
+    }
+  ],
+  "companyAddedByAdmin": [
+    {
+      "title": "Admin Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "admin_name"
+    },
+    {
+      "title": "Admin Email",
+      "key": "email",
+      "model": "CompanyUser",
+      "name": "admin_email"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Temporary Password",
+      "key": "password",
+      "name": "password"
+    }
+  ],
+  "planAddedByAdmin": [
+    {
+      "title": "Company Admin Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "company_admin_name"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Plan Description",
+      "key": "description",
+      "model": "Plan",
+      "name": "plan_description"
+    },
+    {
+      "title": "Plan Currency",
+      "key": "currency",
+      "model": "Plan",
+      "name": "plan_currency"
+    },
+    {
+      "title": "Plan Original Price",
+      "key": "originalPrice",
+      "model": "Plan",
+      "name": "plan_original_price"
+    },
+    {
+      "title": "Plan Discounted Price",
+      "key": "discountedPrice",
+      "model": "Plan",
+      "name": "plan_discounted_price"
+    }
+  ],
+  "emailCampaignUser": [
+    {
+      "title": "Company Name",
+      "key": "name",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Lead First Name",
+      "key": "leadfirstname",
+      "model": "Lead",
+      "name": "lead_first_name"
+    },
+    {
+      "title": "Message Name",
+      "key": "Message",
+      "model": "Messages",
+      "name": "message_name"
+    }
+  ],
+  "sendOtpUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "name": "otp"
+    }
+  ],
+  "userProfileUpdatedByCompanyAdmin": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "updateUserRoleByCompanyAdmin": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "updateUserMailByCompanyAdmin": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "updateUserPhoneByCompanyAdmin": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "sendInvitationInviteUserUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "User Email",
+      "key": "email",
+      "model": "CompanyUser",
+      "name": "email"
+    },
+    {
+      "title": "password",
+      "key": "password",
+      "model": "User",
+      "name": "password"
+    }
+  ],
+  "sendEmailVerificationOtpUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "name": "otp"
+    },
+    {
+      "title": "Minutes",
+      "key": "minutes",
+      "name": "minutes"
+    }
+  ],
+  "resendEmailVerificationOtpUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "model": "CompanyUser",
+      "name": "otp"
+    },
+    {
+      "title": "Minutes",
+      "key": "minutes",
+      "name": "minutes"
+    }
+  ],
+  "resetCompanyUserPasswordOtp": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "OTP",
+      "key": "otp",
+      "name": "otp"
+    },
+    {
+      "title": "Minutes",
+      "key": "minutes",
+      "name": "minutes"
+    }
+  ],
+  "invitationInCompanyUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "User Email",
+      "key": "email",
+      "model": "CompanyUser",
+      "name": "email"
+    },
+    {
+      "title": "Temporary Password",
+      "key": "password",
+      "model": "CompanyUser",
+      "name": "password"
+    }
+  ],
+  "sendRegistrationSuccessUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "sendPasswordResetSuccessUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    }
+  ],
+  "planPaymentReceivedUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Total Amount",
+      "key": "totalAmount",
+      "name": "total_amount"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    }
+  ],
+  "paymentSuccessUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Total Amount",
+      "key": "totalAmount",
+      "name": "total_amount"
+    },
+    {
+      "title": "Plan Currency",
+      "key": "currency",
+      "model": "Plan",
+      "name": "plan_currency"
+    },
+    {
+      "title": "Plan Discounted Price",
+      "key": "discountedPrice",
+      "name": "plan_discounted_price"
+    },
+    {
+      "title": "Plan Activation Date",
+      "key": "activationDate",
+      "name": "activation_date"
+    },
+    {
+      "title": "Plan expiry Date",
+      "key": "expiryDate",
+      "name": "expiry_date"
+    }
+  ],
+  "planStartedUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Total Amount",
+      "key": "totalAmount",
+      "name": "total_amount"
+    },
+    {
+      "title": "Plan Currency",
+      "key": "currency",
+      "model": "Plan",
+      "name": "plan_currency"
+    },
+    {
+      "title": "Plan Discounted Price",
+      "key": "discountedPrice",
+      "name": "plan_discounted_price"
+    },
+    {
+      "title": "Plan Activation Date",
+      "key": "activationDate",
+      "name": "activation_date"
+    },
+    {
+      "title": "Plan expiry Date",
+      "key": "expiryDate",
+      "name": "expiry_date"
+    }
+  ],
+  "planPaymentFailedUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    }
+  ],
+  "planExpiringTomorrowUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Plan Expiry Date",
+      "key": "expiryDate",
+      "name": "expiry_date"
+    }
+  ],
+  "planExpiringTodayUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Plan Expiry Date",
+      "key": "expiryDate",
+      "name": "expiry_date"
+    }
+  ],
+  "planExpiredNoticeUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    }
+  ],
+  "emailCampaignCreatedOrganizer": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Campaign Name",
+      "key": "campaignName",
+      "model": "EmailCampaign",
+      "name": "campaign_name"
+    },
+    {
+      "title": "Campaign Start Date",
+      "key": "startDate",
+      "name": "start_date"
+    },
+    {
+      "title": "Campaign Start Time",
+      "key": "startTime",
+      "name": "start_time"
+    },
+    {
+      "title": "Campaign End Date",
+      "key": "endDate",
+      "name": "end_date"
+    },
+    {
+      "title": "Campaign End Time",
+      "key": "endTime",
+      "name": "end_time"
+    },
+    {
+      "title": "Days Selected",
+      "key": "daysSelected",
+      "name": "days_selected"
+    }
+  ],
+  "emailCampaignActiveOrganizer": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Campaign Name",
+      "key": "campaignName",
+      "model": "EmailCampaign",
+      "name": "campaign_name"
+    },
+    {
+      "title": "Campaign Start Date",
+      "key": "startDate",
+      "name": "start_date"
+    },
+    {
+      "title": "Campaign Start Time",
+      "key": "startTime",
+      "name": "start_time"
+    },
+    {
+      "title": "Campaign End Date",
+      "key": "endDate",
+      "name": "end_date"
+    },
+    {
+      "title": "Campaign End Time",
+      "key": "endTime",
+      "name": "end_time"
+    },
+    {
+      "title": "Days Selected",
+      "key": "daysSelected",
+      "name": "days_selected"
+    },
+    {
+      "title": "Send Between Time",
+      "key": "sendBetweenTime",
+      "name": "send_between_time"
+    }
+  ],
+  "emailCampaignCompletedOrganizer": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Campaign Name",
+      "key": "campaignName",
+      "model": "EmailCampaign",
+      "name": "campaign_name"
+    },
+    {
+      "title": "Campaign Start Date",
+      "key": "startDate",
+      "name": "start_date"
+    },
+    {
+      "title": "Campaign Start Time",
+      "key": "startTime",
+      "name": "start_time"
+    },
+    {
+      "title": "Campaign End Date",
+      "key": "endDate",
+      "name": "end_date"
+    },
+    {
+      "title": "Campaign End Time",
+      "key": "endTime",
+      "name": "end_time"
+    },
+    {
+      "title": "Days Selected",
+      "key": "daysSelected",
+      "name": "days_selected"
+    },
+    {
+      "title": "Send Between Time",
+      "key": "sendBetweenTime",
+      "name": "send_between_time"
+    }
+  ],
+  "seatsUpgradedUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Plan Name",
+      "key": "name",
+      "model": "Plan",
+      "name": "plan_name"
+    },
+    {
+      "title": "Added Seats",
+      "key": "added_seats",
+      "name": "added_seats"
+    },
+    {
+      "title": "Total Seats",
+      "key": "total_seats",
+      "name": "total_seats"
+    },
+    {
+      "title": "Amount Paid",
+      "key": "amount_paid",
+      "name": "amount_paid"
+    },
+    {
+      "title": "Activation Date",
+      "key": "activation_date",
+      "name": "activation_date"
+    }
+  ],
+  "seatsDowngradedUser": [
+    {
+      "title": "User Name",
+      "key": "name",
+      "model": "CompanyUser",
+      "name": "name"
+    },
+    {
+      "title": "Company Name",
+      "key": "companyName",
+      "model": "Company",
+      "name": "company_name"
+    },
+    {
+      "title": "Removed Seats",
+      "key": "removed_seats",
+      "name": "removed_seats"
+    },
+    {
+      "title": "Current Seats",
+      "key": "current_seats",
+      "name": "current_seats"
+    },
+    {
+      "title": "Plan Name",
+      "key": "plan_name",
+      "name": "plan_name"
+    },
+    {
+      "title": "Activation Date",
+      "key": "activation_date",
+      "name": "activation_date"
+    }
+  ]
+ 
+}

@@ -1,0 +1,533 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Global screen size */
+body {
+  font-size: 1rem; /* Equals to the base font size */
+}
+
+.container {
+  width: 80%;
+  padding: 1rem;
+}
+
+.text {
+  font-size: 1.2em;
+}
+
+/* img {
+  width: 100%;
+  height: auto;
+} */
+/* Global screen size */
+
+
+.inter-unique {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+details[open] summary::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: auto;
+}
+
+details summary {
+  list-style: none;
+}
+
+/* Custom scrollbar for webkit-based browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 1px;
+  height: 40px;
+  border-radius: 4px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d5d6d6;
+  border-radius: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #d5d6d6 transparent;
+}
+
+.even\:bg-gray-100:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: white !important;
+}
+
+.even\:bg-gray-100:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: #f9fafb !important;
+}
+
+/* Hide scrollbar on webkit browsers (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Outlet width */
+.calcc-widthhh {
+  width: 100%;
+}
+
+.sidebaar-showww {
+  display: none;
+}
+
+.dash-width-1 {
+  width: 320px;
+}
+
+@media screen and (min-width: 1360px) {
+  .dash-width-1 {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .dash-width-1 {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1670px) {
+  .dash-width-1 {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .dash-width-1 {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calcc-widthhh {
+    width: calc(100vw - 280px);
+  }
+
+  .sidebaar-showww {
+    display: block;
+  }
+}
+
+.dash-layout-1 {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 743px) {
+  .dash-layout-1 {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024) and (max-width: 1065px) {
+  .dash-layout-1 {
+    justify-content: center;
+  }
+}
+
+/* Date Picker */
+.flatpickr-calendar {
+  width: fit-content !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  /* padding: 10px !important; */
+  padding-right: 20px !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+  background: white !important;
+}
+select.flatpickr-monthDropdown-months {
+  appearance: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+}
+
+.flatpickr-current-month {
+  font-size: 135%;
+  line-height: inherit;
+  font-weight: 300;
+  color: inherit;
+  position: absolute;
+  width: 85% !important;
+  left: 12.5%;
+  padding: 7.48px 0 0 0;
+  line-height: 1;
+  height: 34px;
+  display: flex;
+  justify-content: center !important;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.flatpickr-day.today {
+  border-color: #175cd3 !important;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled {
+  cursor: not-allowed;
+  color: rgb(182, 182, 182) !important;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.inter-unique {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+details[open] summary::before {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  cursor: auto;
+}
+
+details summary {
+  list-style: none;
+}
+
+/* Custom scrollbar for webkit-based browsers (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 40px;
+  border-radius: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d5d6d6;
+  border-radius: 10px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #d5d6d6 transparent;
+}
+
+.even\:bg-gray-100:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: white !important;
+}
+
+.even\:bg-gray-100:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: #f9fafb !important;
+}
+
+/* Hide scrollbar on webkit browsers (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Outlet width */
+.calcc-widthhh {
+  width: 100%;
+}
+
+.sidebaar-showww {
+  display: none;
+}
+
+.dash-width-1 {
+  width: 320px;
+}
+
+@media screen and (min-width: 1360px) {
+  .dash-width-1 {
+    width: 340px;
+  }
+}
+
+@media screen and (min-width: 1560px) {
+  .dash-width-1 {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1670px) {
+  .dash-width-1 {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .dash-width-1 {
+    width: 420px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .calcc-widthhh {
+    width: calc(100vw - 280px);
+  }
+
+  .sidebaar-showww {
+    display: block;
+  }
+}
+
+.dash-layout-1 {
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 743px) {
+  .dash-layout-1 {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024) and (max-width: 1065px) {
+  .dash-layout-1 {
+    justify-content: center;
+  }
+}
+
+/* Date Picker */
+.flatpickr-calendar {
+  width: fit-content !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months {
+  /* padding: 10px !important; */
+  padding-right: 20px !important;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months:hover {
+  background: white !important;
+}
+.flatpickr-monthDropdown-month:hover {
+  background-color: #eff8ff !important;
+}
+
+select.flatpickr-monthDropdown-months {
+  appearance: none !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+}
+
+.flatpickr-current-month {
+  font-size: 135%;
+  line-height: inherit;
+  font-weight: 300;
+  color: inherit;
+  position: absolute;
+  width: 85% !important;
+  left: 12.5%;
+  padding: 7.48px 0 0 0;
+  line-height: 1;
+  height: 34px;
+  display: flex;
+  justify-content: center !important;
+  text-align: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.flatpickr-day.today {
+  border-color: #175cd3 !important;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.flatpickr-disabled {
+  cursor: not-allowed;
+  color: rgb(182, 182, 182) !important;
+}
+
+.responsiveee {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1609px) {
+  .responsiveee {
+    flex-direction: column;
+  }
+}
+
+/* For Chrome, Safari, Edge, and other WebKit browsers */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+details:not([open]) .icon-open {
+  display: none;
+}
+details[open] .icon-closed {
+  display: none;
+}
+details[open] .icon-open {
+  display: inline;
+}
+
+.py-4 {
+  padding-top: 4px !important;
+  padding-bottom: 0px !important;
+}
+
+.ptpb-4 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.ql-toolbar {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  color: #344054 !important;
+}
+.ql-editor,
+.ql-blank {
+  font-size: 16px;
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #344054;
+  letter-spacing: 1px;
+  height: fit-content !important;
+}
+.ql-container {
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}
+
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  min-height: 160px !important;
+}
+
+.skeleton-loader {
+  width: 100%;
+  padding: 16px;
+}
+
+.skeleton-header,
+.skeleton-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.skeleton-item {
+  background-color: #e0e0e0;
+  height: 20px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeleton-header .skeleton-item {
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+.skeleton-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.skeleton-row .skeleton-item {
+  flex: 1;
+  height: 20px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+/* .responsive-paginationnn1{
+  order: 1;
+}
+.responsive-paginationnn1{
+  order: 2;
+}
+.responsive-paginationnn1{
+  order: 3;
+} */
+
+@media screen and (max-width: 419px) {
+  .responsive-paginationnn {
+    flex-wrap: wrap;
+  }
+  .responsive-paginationnn1 {
+    order: 2;
+    margin-top: 10px;
+  }
+  .responsive-paginationnn2 {
+    order: 1;
+    width: 315px;
+  }
+  .responsive-paginationnn3 {
+    order: 3;
+    margin-top: 10px;
+  }
+}
+
+.html-content h1,
+.html-content h2,
+.html-content h3,
+.html-content h4,
+.html-content h5,
+.html-content h6 {
+  font-size: 2rem !important; /* Adjust font size as needed */
+  font-weight: bold !important; /* Ensure font weight is applied */
+  color: inherit !important; /* Make sure color is inherited */
+}
+
+.profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
