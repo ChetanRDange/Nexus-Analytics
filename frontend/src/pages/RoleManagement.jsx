@@ -15,7 +15,7 @@ const RoleManagement = () => {
   const [deleteRole, setDeleteRole] = useState({});
 
   const { callApi } = useMutation();
-  
+
   const statuses = [
     {
       id: 0,
@@ -58,7 +58,7 @@ const RoleManagement = () => {
       render: (value = []) => {
         const maxImages = Math.min(value.length, 3);
         const showMoreCount = value.length > 3 ? `+${value.length - 3}` : "";
-        
+
         return (
           <div className="flex items-center">
             {value.slice(0, maxImages).map((item, index) => (
@@ -69,7 +69,7 @@ const RoleManagement = () => {
                 </div>
               </div>
             ))}
-            
+
             {showMoreCount && (
               <div className="tooltip-container shrink-0">
                 <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gray-100 border border-dashed border-gray-400 text-xs font-medium text-gray-700">
@@ -114,7 +114,6 @@ const RoleManagement = () => {
       id: 5,
       Header: "Updated At",
       accessor: "updatedAt",
-      render: (value) => formatDateTime(value),
       render: (value) =>
         value ? (
           formatDateTime(value)
@@ -164,7 +163,7 @@ const RoleManagement = () => {
 
   const IconRenderer = React.memo(({ name, avatar }) => {
     const lightColors = [
-      "#ffccbc", "#ffab91", "#ff8a65", "#ff7043", 
+      "#ffccbc", "#ffab91", "#ff8a65", "#ff7043",
       "#f4511e", "#ff5722", "#f44336", "#e57373",
       "#81c784", "#4caf50", "#66bb6a", "#29b6f6",
       "#64b5f6", "#f06292", "#ffd54f"
@@ -176,7 +175,7 @@ const RoleManagement = () => {
 
     const initial = name?.charAt(0).toUpperCase();
     const color = getRandomColor();
-  
+
     return (
       <div className="relative w-6 h-6 flex justify-center items-center">
         {avatar ? (
@@ -229,7 +228,7 @@ const RoleManagement = () => {
   return (
     <div className="h-full py-8 p-4 sm:p-5 overflow-x-hidden">
       <div className=" w-full">
-      {!fullScreen &&  <div className="w-full pb-8 border-b border-primary gap-y-4 gap-2 flex justify-between items-center   ">
+        {!fullScreen && <div className="w-full pb-8 border-b border-primary gap-y-4 gap-2 flex justify-between items-center   ">
           <h4 className="text-2xl md:text-3xl lg:text-3xl font-semibold text-dark ">
             Role Management
           </h4>

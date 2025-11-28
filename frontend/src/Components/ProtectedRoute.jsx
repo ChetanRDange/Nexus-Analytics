@@ -116,7 +116,6 @@ const ROUTE_TO_PERMISSION_MAP = {
   "documentation/edit": "documentation",
   "aws-settings/edit": "aws",
   "role-management/edit": "roles",
-  "coupons/view": "coupons",
   "edit-company": "companies",
 
   // View routes

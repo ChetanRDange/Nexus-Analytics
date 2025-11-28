@@ -69,5 +69,3 @@ const OrdersCard = ({ data, total }) => {
 };
 
 export default OrdersCard;
-
-export default OrdersCard;
